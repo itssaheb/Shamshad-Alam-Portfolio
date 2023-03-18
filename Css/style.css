@@ -16,6 +16,9 @@
 
 }
 
+html {
+    overflow-x: hidden;
+}
 
 body {
     background-image: linear-gradient(-225deg, #562B7C 52%, #FF3CAC 0%, #2B86C5 100%);
@@ -28,7 +31,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
     position: relative;
 }
 
@@ -75,7 +78,7 @@ ul a {
     text-decoration: none;
 }
 
-li {
+.nav-link {
 
     text-shadow: 2px 2px 2px black;
     padding: 10px 10px;
@@ -88,7 +91,7 @@ li {
 
 }
 
-li i {
+.nav-link i {
     padding: 0 5px;
 }
 
@@ -726,19 +729,427 @@ input {
 
 
 /*==================== MEDIA QUERIES ====================*/
+
+
+/* For Extra small devices */
+@media screen and (max-width: 320px) {
+
+    /* ....................namelogo................... */
+    .logo {
+        left: 5%;
+        border-radius: 0 0 35px 35px;
+        width: 90px;
+        height: 30px;
+        font-size: 0.25rem;
+
+    }
+
+    /* .......................navbar................ */
+    .nav-data {
+        width: 98%;
+        bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .nav-link {
+
+        padding: 0px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.7rem;
+        border-radius: 50%;
+        margin: 0px 0px;
+        width: 40px;
+        height: 40px;
+
+    }
+
+    .nav-link i {
+        padding-bottom: 5px;
+        font-size: 0.7rem;
+    }
+
+    .active {
+        font-size: 0.5rem;
+    }
+
+    /* ........................dark mode.................. */
+    .light {
+
+        border-radius: 0 0 5px 5px;
+        right: 5%;
+        border-radius: 0 0 35px 35px;
+        font-size: 0.3rem;
+    }
+
+    .toggle {
+
+        width: 90px;
+        height: 30px;
+        transition: 0.2s;
+        justify-content: center;
+    }
+
+    .toggle i {
+        font-size: 20px;
+        padding: 0px;
+        margin-bottom: 1px;
+        width: 50px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .toggle .ball {
+        width: 25px;
+        height: 25px;
+        margin: 22px;
+        margin-top: 21px;
+        margin-left: -24px;
+    }
+
+    .dark .toggle .ball {
+        background: rgba(255, 255, 255, 0.3);
+        transform: translateX(46px);
+    }
+
+    main {
+        width: 100%;
+    }
+
+    /* .......................hero................... */
+    .hero {
+        flex-direction: column-reverse;
+        padding-top: 50px;
+    }
+
+
+    .iam {
+        width: 100%;
+        font-size: 1.3rem;
+
+    }
+
+    .text-animation {
+        height: 45px;
+        margin: 15px 0;
+
+    }
+
+
+    .text {
+        font-size: 1.3rem;
+    }
+
+    .text-box {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .description {
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    .profile-img {
+        width: 250px;
+        margin: 0;
+    }
+
+    .section {
+        width: 100%;
+        height: fit-content;
+        padding-top: 50px;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 2rem;
+
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+        padding: 0 10px;
+    }
+
+    /* ................about............... */
+
+    .about-box {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .about-profile {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-img {
+        width: 250px;
+    }
+
+
+    .creative-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 10px;
+    }
+
+    .boxes {
+
+        border-radius: 15px;
+        font-size: 0.7rem;
+    }
+
+    h3 {
+        margin: 5px 5px;
+        font-size: 0.7rem;
+    }
+
+    .about-desc {
+        width: 100%;
+        height: fit-content;
+        padding: 10px;
+        font-size: 1rem;
+
+    }
+
+    .hire-me {
+        font-size: 1rem;
+        margin-top: 20px;
+    }
+
+    /* ........................skill box.................. */
+    .skill-box {
+        flex-direction: column;
+    }
+
+    .b-circle {
+        column-gap: 0px;
+    }
+
+    .b-text {
+        font-size: 0.7rem;
+    }
+
+    .fa-circle {
+        font-size: 0.8rem;
+    }
+
+    .b-percent {
+
+        padding: 1px 1px;
+        font-size: 0.5rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+        margin: 20px 0 20px 0;
+
+    }
+
+    /* ..............timeline.................... */
+
+    .timeline::after {
+        left: 31px;
+    }
+
+    .container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    .container::before {
+        left: 60px;
+        border: medium solid var(--box-bg-color);
+        border-width: 10px 10px 10px 0;
+        border-color: transparent var(--box-bg-color) transparent transparent;
+    }
+
+    .left::after,
+    .right::after {
+        left: 15px;
+    }
+
+    .right {
+        left: 0%;
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    .year {
+        font-size: 1.2rem;
+    }
+
+    .company {
+        font-size: 1rem;
+    }
+
+    .role {
+        font-size: 0.8rem;
+        text-align: start;
+    }
+
+    /* .....................carousel............ */
+
+    .carousel-cell img {
+        height: 55vh;
+        margin-left: 100px;
+        margin-right: 100px;
+        overflow: hidden;
+    }
+
+    /* ..................contact................ */
+
+
+
+    .contact-box {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .contacts {
+        margin: 15px 0;
+    }
+
+    .contact-link {
+        margin: 0 0 10px 0;
+    }
+
+    .contact-icon {
+        font-size: 1.5rem;
+    }
+
+    .contact-info {
+        font-size: 1.2rem;
+    }
+
+    .contact-no a {
+        font-size: 1rem;
+
+    }
+
+    .form-info {
+        font-size: 0.9rem;
+    }
+
+    .contact-inputs {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    /* ...................footer....................... */
+
+
+    .footer-section {
+        margin-top: 50px;
+        background: #562b7c;
+        border-radius: 10px 10px 0 0;
+        padding-bottom: 70px;
+
+    }
+
+    .footer-data {
+        padding: 10px 0 0 10px;
+    }
+
+    .footer-title {
+        font-size: 1rem;
+    }
+
+    .footer-subtitle {
+        font-size: 0.7rem;
+        margin-bottom: 10px;
+    }
+
+    .quick-link {
+        font-size: 1.2rem;
+        padding: 0px;
+        margin-right: 5px;
+    }
+
+    .footer-end {
+        text-align: center;
+    }
+
+    .fa-linkedin-in-n {
+        color: #0a66c2;
+    }
+
+    .fa-circle-xmark-n {
+        color: #ff5400;
+    }
+
+    .fa-behance-n {
+        color: #0054f7;
+    }
+
+    .fa-twitter-n {
+        color: #1da1f2;
+    }
+
+    .fa-instagram-n {
+        color: #c32aa3;
+    }
+
+    .quick-link:hover {
+        text-shadow: 2px 2px black;
+        transition: all 300ms ease-out;
+    }
+
+    .watermark {
+        width: 100%;
+        font-size: 0.8rem;
+        text-align: center;
+        color: var(--text-color);
+        text-decoration: none;
+        margin: 20px 0;
+    }
+
+    .watermark a {
+        color: var(--text-color);
+        text-decoration: none;
+    }
+
+    .watermark:hover a {
+
+        color: aqua;
+
+    }
+
+
+}
+
 /* For small devices */
-@media screen and (max-width: 600px) {
+@media (min-width: 321px) and (max-width: 375px) {
 
     /* ....................namelogo................... */
     .logo {
 
-        position: fixed;
-        top: 0px;
         left: 5%;
         border-radius: 0 0 35px 35px;
         width: 120px;
-
-
         height: 30px;
         font-size: 0.3rem;
 
@@ -747,15 +1158,14 @@ input {
     /* .......................navbar................ */
     .nav-data {
         width: 98%;
-        position: fixed;
         bottom: 10px;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         padding: 10px;
     }
 
-    li {
+    .nav-link {
 
         padding: 0px;
         display: flex;
@@ -770,7 +1180,7 @@ input {
 
     }
 
-    li i {
+    .nav-link i {
         padding-bottom: 5px;
         font-size: 1.3rem;
     }
@@ -783,8 +1193,6 @@ input {
     .light {
 
         border-radius: 0 0 5px 5px;
-        position: fixed;
-        top: 0px;
         right: 5%;
         border-radius: 0 0 35px 35px;
         font-size: 0.3rem;
@@ -1011,9 +1419,6 @@ input {
         text-align: start;
     }
 
-    .m-10 {
-        margin: 0px;
-    }
     /* .....................carousel............ */
 
     .carousel-cell img {
@@ -1141,18 +1546,1277 @@ input {
         color: aqua;
 
     }
+}
+
+/* For Large devices */
+@media (min-width: 376px) and (max-width: 450px) {
+
+    /* ....................namelogo................... */
+    .logo {
+
+        left: 5%;
+        border-radius: 0 0 35px 35px;
+        width: 120px;
+        height: 30px;
+        font-size: 0.3rem;
+
+    }
+
+    /* .......................navbar................ */
+    .nav-data {
+        width: 98%;
+        bottom: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .nav-link {
+
+        padding: 0px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.8rem;
+        border-radius: 50%;
+        margin: 0px 0px;
+        width: 50px;
+        height: 50px;
+
+    }
+
+    .nav-link i {
+        padding-bottom: 5px;
+        font-size: 1.3rem;
+    }
+
+    .active {
+        font-size: 0.5rem;
+    }
+
+    /* ........................dark mode.................. */
+    .light {
+
+        border-radius: 0 0 5px 5px;
+        right: 5%;
+        border-radius: 0 0 35px 35px;
+        font-size: 0.3rem;
+    }
+
+    .toggle {
+
+        width: 120px;
+        height: 30px;
+        transition: 0.2s;
+        justify-content: center;
+    }
+
+    .toggle i {
+        font-size: 20px;
+        padding: 0px;
+        margin-bottom: 1px;
+        width: 50px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .toggle .ball {
+        width: 25px;
+        height: 25px;
+        margin: 26px;
+        margin-top: 25px;
+        margin-left: -24px;
+    }
+
+    .dark .toggle .ball {
+        background: rgba(255, 255, 255, 0.3);
+        transform: translateX(50px);
+    }
+
+    main {
+        width: 100%;
+    }
+
+    /* .......................hero................... */
+    .hero {
+        flex-direction: column-reverse;
+        padding-top: 50px;
+    }
+
+
+    .iam {
+        font-size: 1.8rem;
+
+    }
+
+    .text-animation {
+        margin: 15px 0;
+        height: 75px;
+
+    }
+
+
+    .text {
+        font-size: 1.8rem;
+    }
+
+    .text-box {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .description {
+        font-size: 1.2rem;
+        margin: 0;
+    }
+
+    .profile-img {
+        width: 250px;
+        margin: 0;
+    }
+
+    .section {
+        width: 100%;
+        height: fit-content;
+        padding-top: 50px;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 2rem;
+
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+        padding: 0 10px;
+    }
+
+    /* ................about............... */
+
+    .about-box {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .about-profile {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-img {
+        width: 250px;
+    }
+
+
+    .creative-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 10px;
+    }
+
+    .boxes {
+
+        border-radius: 15px;
+        font-size: 1rem;
+    }
+
+    h3 {
+        margin: 10px 5px;
+        font-size: 1rem;
+    }
+
+    .about-desc {
+        width: 100%;
+        height: fit-content;
+        padding: 10px;
+        font-size: 1.2rem;
+
+    }
+
+    .hire-me {
+        font-size: 1.2rem;
+        margin-top: 20px;
+    }
+
+    /* ........................skill box.................. */
+    .skill-box {
+        flex-direction: column;
+    }
+
+    .b-circle {
+        column-gap: 0px;
+    }
+
+    .b-text {
+        font-size: 0.8rem;
+    }
+
+    .fa-circle {
+        font-size: 0.9rem;
+    }
+
+    .b-percent {
+
+        padding: 1px 1px;
+        font-size: 0.6rem;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+        margin: 20px 0 20px 0;
+
+    }
+
+    /* ..............timeline.................... */
+
+    .timeline::after {
+        left: 31px;
+    }
+
+    .container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    .container::before {
+        left: 60px;
+        border: medium solid var(--box-bg-color);
+        border-width: 10px 10px 10px 0;
+        border-color: transparent var(--box-bg-color) transparent transparent;
+    }
+
+    .left::after,
+    .right::after {
+        left: 15px;
+    }
+
+    .right {
+        left: 0%;
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    .year {
+        font-size: 1.5rem;
+    }
+
+    .company {
+        font-size: 1.2rem;
+    }
+
+    .role {
+        font-size: 1rem;
+        text-align: start;
+    }
+
+    /* .....................carousel............ */
+
+    .carousel-cell img {
+        height: 60vh;
+        margin-left: 100px;
+        margin-right: 100px;
+        overflow: hidden;
+    }
+
+    /* ..................contact................ */
+
+
+
+    .contact-box {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .contacts {
+        margin: 15px 0;
+    }
+
+    .contact-link {
+        margin: 0 0 10px 0;
+    }
+
+    .contact-icon {
+        font-size: 1.5rem;
+    }
+
+    .contact-info {
+        font-size: 1.5rem;
+    }
+
+    .contact-no a {
+        font-size: 1.2rem;
+
+    }
+
+    .form-info {
+        font-size: 1rem;
+    }
+
+    .contact-inputs {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    /* ...................footer....................... */
+
+
+    .footer-section {
+        margin-top: 50px;
+        background: #562b7c;
+        border-radius: 10px 10px 0 0;
+        padding-bottom: 70px;
+
+    }
+
+    .footer-data {
+        padding: 10px 0 0 10px;
+    }
+
+    .footer-title {
+        font-size: 1rem;
+    }
+
+    .footer-subtitle {
+        font-size: 0.7rem;
+        margin-bottom: 10px;
+    }
+
+    .quick-link {
+        font-size: 1.2rem;
+        padding: 0px;
+        margin-right: 5px;
+    }
+
+    .footer-end {
+        text-align: center;
+    }
+
+    .fa-linkedin-in-n {
+        color: #0a66c2;
+    }
+
+    .fa-circle-xmark-n {
+        color: #ff5400;
+    }
+
+    .fa-behance-n {
+        color: #0054f7;
+    }
+
+    .fa-twitter-n {
+        color: #1da1f2;
+    }
+
+    .fa-instagram-n {
+        color: #c32aa3;
+    }
+
+    .quick-link:hover {
+        text-shadow: 2px 2px black;
+        transition: all 300ms ease-out;
+    }
+
+    .watermark {
+        width: 100%;
+        font-size: 0.8rem;
+        text-align: center;
+        color: var(--text-color);
+        text-decoration: none;
+        margin: 20px 0;
+    }
+
+    .watermark a {
+        color: var(--text-color);
+        text-decoration: none;
+    }
+
+    .watermark:hover a {
+
+        color: aqua;
+
+    }
+
+}
+
+/* For Tablet devices */
+@media (min-width: 451px) and (max-width: 575px) {
+
+    /* ....................namelogo................... */
+    .logo {
+
+        left: 5%;
+        border-radius: 0 0 35px 35px;
+        width: 150px;
+        height: 30px;
+        font-size: 0.4rem;
+
+    }
+
+    /* .......................navbar................ */
+    .nav-data {
+        width: 98%;
+        position: fixed;
+        bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .nav-link {
+
+        padding: 0px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.8rem;
+        border-radius: 50%;
+        margin: 0px;
+        width: 50px;
+        height: 50px;
+
+    }
+
+    .nav-link i {
+        padding-bottom: 5px;
+        font-size: 1.3rem;
+    }
+
+    .active {
+        font-size: 0.6rem;
+    }
+
+    /* ........................dark mode.................. */
+    .light {
+
+        border-radius: 0 0 5px 5px;
+        right: 5%;
+        border-radius: 0 0 35px 35px;
+        font-size: 0.3rem;
+    }
+
+    .toggle {
+
+        width: 150px;
+        height: 30px;
+        transition: 0.2s;
+        justify-content: center;
+    }
+
+    .toggle i {
+        font-size: 20px;
+        padding: 0px;
+        margin-bottom: 1px;
+        width: 50px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .toggle .ball {
+        width: 25px;
+        height: 25px;
+        margin: 26px;
+        margin-top: 25px;
+        margin-left: -24px;
+    }
+
+    .dark .toggle .ball {
+        background: rgba(255, 255, 255, 0.3);
+        transform: translateX(50px);
+    }
+
+    main {
+        width: 100%;
+    }
+
+    /* .......................hero................... */
+    .hero {
+        flex-direction: column-reverse;
+        padding-top: 50px;
+    }
+
+
+    .iam {
+        font-size: 2rem;
+
+    }
+
+    .text-animation {
+        margin: 15px 0;
+        height: 75px;
+
+    }
+
+
+    .text {
+        font-size: 2rem;
+    }
+
+    .text-box {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .description {
+        font-size: 1.2rem;
+        margin: 0;
+    }
+
+    .profile-img {
+        width: 250px;
+        margin: 0;
+    }
+
+    .section {
+        width: 100%;
+        height: fit-content;
+        padding-top: 50px;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 2rem;
+
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+        padding: 0 10px;
+    }
+
+    /* ................about............... */
+
+    .about-box {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .about-profile {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-img {
+        width: 250px;
+    }
+
+
+    .creative-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 10px;
+    }
+
+    .boxes {
+
+        border-radius: 15px;
+        font-size: 1rem;
+    }
+
+    h3 {
+        margin: 10px 5px;
+        font-size: 1rem;
+    }
+
+    .about-desc {
+        width: 100%;
+        height: fit-content;
+        padding: 10px;
+        font-size: 1.2rem;
+
+    }
+
+    .hire-me {
+        font-size: 1.2rem;
+        margin-top: 20px;
+    }
+
+    /* ........................skill box.................. */
+    .skill-box {
+        flex-direction: column;
+    }
+
+    .b-circle {
+        column-gap: 0px;
+    }
+
+    .b-text {
+        font-size: 1rem;
+    }
+
+    .fa-circle {
+        font-size: 1rem;
+    }
+
+    .b-percent {
+
+        padding: 1px 1px;
+        font-size: 0.7rem;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+        margin: 20px 0 20px 0;
+
+    }
+
+    /* ..............timeline.................... */
+
+    .timeline::after {
+        left: 31px;
+    }
+
+    .container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    .container::before {
+        left: 60px;
+        border: medium solid var(--box-bg-color);
+        border-width: 10px 10px 10px 0;
+        border-color: transparent var(--box-bg-color) transparent transparent;
+    }
+
+    .left::after,
+    .right::after {
+        left: 15px;
+    }
+
+    .right {
+        left: 0%;
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    .year {
+        font-size: 1.5rem;
+    }
+
+    .company {
+        font-size: 1.2rem;
+    }
+
+    .role {
+        font-size: 1rem;
+        text-align: start;
+    }
+
+    /* .....................carousel............ */
+
+    .carousel-cell img {
+        height: 60vh;
+        margin-left: 100px;
+        margin-right: 100px;
+        overflow: hidden;
+    }
+
+    /* ..................contact................ */
+
+
+
+    .contact-box {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .contacts {
+        margin: 15px 0;
+    }
+
+    .contact-link {
+        margin: 0 0 10px 0;
+    }
+
+    .contact-icon {
+        font-size: 1.5rem;
+    }
+
+    .contact-info {
+        font-size: 1.5rem;
+    }
+
+    .contact-no a {
+        font-size: 1.2rem;
+
+    }
+
+    .form-info {
+        font-size: 1rem;
+    }
+
+    .contact-inputs {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    /* ...................footer....................... */
+
+
+    .footer-section {
+        margin-top: 50px;
+        background: #562b7c;
+        border-radius: 10px 10px 0 0;
+        padding-bottom: 80px;
+
+    }
+
+    .footer-data {
+        padding: 10px 0 0 10px;
+    }
+
+    .footer-title {
+        font-size: 1rem;
+    }
+
+    .footer-subtitle {
+        font-size: 0.7rem;
+        margin-bottom: 10px;
+    }
+
+    .quick-link {
+        font-size: 1.2rem;
+        padding: 0px;
+        margin-right: 5px;
+    }
+
+    .footer-end {
+        text-align: center;
+    }
+
+    .fa-linkedin-in-n {
+        color: #0a66c2;
+    }
+
+    .fa-circle-xmark-n {
+        color: #ff5400;
+    }
+
+    .fa-behance-n {
+        color: #0054f7;
+    }
+
+    .fa-twitter-n {
+        color: #1da1f2;
+    }
+
+    .fa-instagram-n {
+        color: #c32aa3;
+    }
+
+    .quick-link:hover {
+        text-shadow: 2px 2px black;
+        transition: all 300ms ease-out;
+    }
+
+    .watermark {
+        width: 100%;
+        font-size: 0.8rem;
+        text-align: center;
+        color: var(--text-color);
+        text-decoration: none;
+        margin: 20px 0;
+    }
+
+    .watermark a {
+        color: var(--text-color);
+        text-decoration: none;
+    }
+
+    .watermark:hover a {
+
+        color: aqua;
+
+    }
+
+}
+
+@media (min-width: 576px) {
+
+
+    /* ....................namelogo................... */
+    .logo {
+
+        left: 5%;
+        border-radius: 0 0 35px 35px;
+        width: 170px;
+        height: 50px;
+        font-size: 0.5rem;
+
+    }
+
+    /* .......................navbar................ */
+    .nav-data {
+        width: 70%;
+        position: fixed;
+        bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .nav-link {
+
+        padding: 30px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+        border-radius: 50%;
+        margin: 0px;
+        width: 50px;
+        height: 50px;
+
+    }
+
+    .nav-link i {
+        padding-bottom: 5px;
+        font-size: 1.3rem;
+    }
+
+    .active {
+        font-size: 0.6rem;
+    }
+
+    /* ........................dark mode.................. */
+    .light {
+
+        border-radius: 0 0 5px 5px;
+        right: 5%;
+        border-radius: 0 0 35px 35px;
+        font-size: 0.3rem;
+    }
+
+    .toggle {
+
+        width: 170px;
+        height: 50px;
+        transition: 0.2s;
+        justify-content: center;
+    }
+
+    .toggle i {
+        font-size: 20px;
+        padding: 0px;
+        margin-bottom: 1px;
+        width: 50px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .toggle .ball {
+        width: 25px;
+        height: 25px;
+        margin: 26px;
+        margin-top: 25px;
+        margin-left: -24px;
+    }
+
+    .dark .toggle .ball {
+        background: rgba(255, 255, 255, 0.3);
+        transform: translateX(50px);
+    }
+
+    main {
+        width: 100%;
+    }
+
+    /* .......................hero................... */
+    .hero {
+        flex-direction: column-reverse;
+        padding-top: 50px;
+    }
+
+
+    .iam {
+        font-size: 2.5rem;
+
+    }
+
+    .text-animation {
+        margin: 15px 0;
+        height: 100px;
+
+    }
+
+
+    .text {
+        font-size: 2.5rem;
+    }
+
+    .text-box {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .description {
+        font-size: 1.5rem;
+        margin: 0;
+    }
+
+    .profile-img {
+        width: 300px;
+        margin: 0;
+    }
+
+    .section {
+        width: 100%;
+        height: fit-content;
+        padding-top: 50px;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 2rem;
+
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+        padding: 0 10px;
+    }
+
+    /* ................about............... */
+
+    .about-box {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .about-profile {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-img {
+        width: 300px;
+    }
+
+
+    .creative-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 10px;
+    }
+
+    .boxes {
+
+        border-radius: 15px;
+        font-size: 1rem;
+    }
+
+    h3 {
+        margin: 10px 5px;
+        font-size: 1.5rem;
+    }
+
+    .about-desc {
+        width: 100%;
+        height: fit-content;
+        padding: 10px;
+        font-size: 1.5rem;
+
+    }
+
+    .hire-me {
+        font-size: 1.2rem;
+        margin-top: 20px;
+    }
+
+    /* ........................skill box.................. */
+    .skill-box {
+        flex-direction: column;
+    }
+
+    .b-circle {
+        column-gap: 0px;
+    }
+
+    .b-text {
+        font-size: 1rem;
+    }
+
+    .fa-circle {
+        font-size: 1rem;
+    }
+
+    .b-percent {
+
+        padding: 1px 1px;
+        font-size: 0.7rem;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+        margin: 20px 0 20px 0;
+
+    }
+
+    /* ..............timeline.................... */
+
+    .year {
+        font-size: 1.5rem;
+    }
+
+    .company {
+        font-size: 1.3rem;
+    }
+
+    .role {
+        font-size: 1.1rem;
+        text-align: start;
+    }
+
+    /* .....................carousel............ */
+
+    .carousel-cell img {
+        height: 60vh;
+        margin-left: 100px;
+        margin-right: 100px;
+        overflow: hidden;
+    }
+
+    /* ..................contact................ */
+
+
+
+    .contact-box {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .contacts {
+        margin: 15px 0;
+    }
+
+    .contact-link {
+        margin: 0 0 10px 0;
+    }
+
+    .contact-icon {
+        font-size: 1.5rem;
+    }
+
+    .contact-info {
+        font-size: 1.5rem;
+    }
+
+    .contact-no a {
+        font-size: 1.2rem;
+
+    }
+
+    .form-info {
+        font-size: 1.2rem;
+    }
+
+    .contact-label {
+        font-size: 1.5rem;
+    }
+
+    .contact-inputs {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    /* ...................footer....................... */
+
+
+    .footer-section {
+        margin-top: 50px;
+        background: #562b7c;
+        border-radius: 10px 10px 0 0;
+        padding-bottom: 100px;
+
+    }
+
+    .footer-data {
+        padding: 10px 0 0 10px;
+    }
+
+    .footer-title {
+        font-size: 1.5rem;
+    }
+
+    .footer-subtitle {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .quick-link {
+        font-size: 1.5rem;
+        padding: 0px;
+        margin-right: 10px;
+    }
+
+    .footer-end {
+        text-align: center;
+    }
+
+    .fa-linkedin-in-n {
+        color: #0a66c2;
+    }
+
+    .fa-circle-xmark-n {
+        color: #ff5400;
+    }
+
+    .fa-behance-n {
+        color: #0054f7;
+    }
+
+    .fa-twitter-n {
+        color: #1da1f2;
+    }
+
+    .fa-instagram-n {
+        color: #c32aa3;
+    }
+
+    .quick-link:hover {
+        text-shadow: 2px 2px black;
+        transition: all 300ms ease-out;
+    }
+
+    .watermark {
+        width: 100%;
+        font-size: 0.8rem;
+        text-align: center;
+        color: var(--text-color);
+        text-decoration: none;
+        margin: 20px 0;
+    }
+
+    .watermark a {
+        color: var(--text-color);
+        text-decoration: none;
+    }
+
+    .watermark:hover a {
+
+        color: aqua;
+
+    }
+
 
 
 }
 
-/* For medium devices */
-@media screen and (min-width: 568px) {
+@media screen and (min-width: 768px) {
 
-   
+    .iam,
+    .text {
+        font-size: 3rem;
+    }
+
+    .text-animation {
+        margin: 15px 0;
+        height: 120px;
+
+    }
+
+    .description {
+        font-size: 2rem;
+        margin: 0;
+    }
+
+    .hire-me {
+        font-size: 1.5rem;
+    }
+
+    /* about */
+    .about-desc {
+        font-size: 2rem;
+    }
+
+    /* skill */
+    .b-text {
+        font-size: 1.5rem;
+    }
+
+    .b-circle .fa-circle {
+        font-size: 1.5rem;
+    }
+
+    .b-percent {
+        font-size: 1.5rem;
+    }
+
+    /* timeline */
+    .year {
+        font-size: 2rem;
+    }
+
+    .company {
+        font-size: 1.7rem;
+    }
+
+    .role {
+        font-size: 1.5rem;
+    }
+
+    /* carousel */
+    .carousel-cell img {
+        height: 45vh;
+        margin: 10px;
+        overflow: hidden;
+    }
 }
 
-@media screen and (min-width: 768px) {}
 
 
 /* For large devices */
-@media screen and (min-width: 1024px) {}
+@media screen and (min-width: 1024px) {
+
+}
