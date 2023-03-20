@@ -62,7 +62,7 @@ body {
 
 .nav-data {
     position: fixed;
-    bottom: 90%;
+    top: 75px;
     z-index: 9;
     display: flex;
     justify-content: center;
@@ -848,7 +848,8 @@ input {
     /* .......................navbar................ */
     .nav-data {
         width: 98%;
-        bottom: 10px;
+        bottom: 15px;
+        top:auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -881,8 +882,6 @@ input {
 
     /* ........................dark mode.................. */
     .light {
-
-        border-radius: 0 0 5px 5px;
         right: 5%;
         border-radius: 0 0 35px 35px;
         font-size: 0.3rem;
@@ -1217,7 +1216,8 @@ input {
     /* .......................navbar................ */
     .nav-data {
         width: 98%;
-        bottom: 10px;
+        bottom: 15px;
+        top:auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -1250,8 +1250,6 @@ input {
 
     /* ........................dark mode.................. */
     .light {
-
-        border-radius: 0 0 5px 5px;
         right: 5%;
         border-radius: 0 0 35px 35px;
         font-size: 0.3rem;
@@ -1581,8 +1579,9 @@ input {
 
     /* .......................navbar................ */
     .nav-data {
-        width: 98%;
-        bottom: 10px;
+        width: 95%;
+        bottom: 15px;
+        top:auto;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -1615,8 +1614,6 @@ input {
 
     /* ........................dark mode.................. */
     .light {
-
-        border-radius: 0 0 5px 5px;
         right: 5%;
         border-radius: 0 0 35px 35px;
         font-size: 0.3rem;
@@ -1947,9 +1944,9 @@ input {
 
     /* .......................navbar................ */
     .nav-data {
-        width: 95%;
-        position: fixed;
-        bottom: 10px;
+        width: min(95%,450px);
+        bottom: 15px;
+        top:auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -1982,8 +1979,6 @@ input {
 
     /* ........................dark mode.................. */
     .light {
-
-        border-radius: 0 0 5px 5px;
         right: 5%;
         border-radius: 0 0 35px 35px;
         font-size: 0.3rem;
@@ -2316,8 +2311,8 @@ input {
     /* .......................navbar................ */
     .nav-data {
         width: fit-content;
-        position: fixed;
-        bottom: 10px;
+        bottom: 15px;
+        top:auto;
         display: flex;
         column-gap: 20px;
         align-items: center;
@@ -2349,8 +2344,6 @@ input {
 
     /* ........................dark mode.................. */
     .light {
-
-        border-radius: 0 0 5px 5px;
         right: 5%;
         border-radius: 0 0 35px 35px;
         font-size: 0.3rem;
@@ -2673,10 +2666,1097 @@ input {
 }
 
 /* for Large Tablet */
-@media (min-width: 768px) and (max-width: 1024px) {}
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    
+    /* ....................namelogo................... */
+    .logo {
+
+        left: 5%;
+        border-radius: 0 0 35px 35px;
+        width: 170px;
+        height: 50px;
+        font-size: 0.5rem;
+
+    }
+
+    /* .......................navbar................ */
+    .nav-data {
+        width: fit-content;
+        top: 70px;
+        column-gap: 0px;
+        padding: 5px;
+    }
+
+    .nav-link {
+        padding: 10px 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.8rem;
+        border-radius: 50px;
+        margin: 0px;
+        width: fit-content;
+        height: fit-content;
+
+    }
+
+    .nav-link i {
+        padding-bottom: 5px;
+        font-size: 1rem;
+    }
+
+    /* ........................dark mode.................. */
+    .light {
+
+        right: 5%;
+        border-radius: 0 0 35px 35px;
+        font-size: 0.3rem;
+    }
+
+    .toggle {
+
+        width: 170px;
+        height: 50px;
+        transition: 0.2s;
+        justify-content: center;
+    }
+
+    .toggle i {
+        font-size: 20px;
+        padding: 0px;
+        margin-bottom: 1px;
+        width: 50px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .toggle .ball {
+        width: 25px;
+        height: 25px;
+        margin: 26px;
+        margin-top: 25px;
+        margin-left: -24px;
+    }
+
+    .dark .toggle .ball {
+        background: rgba(255, 255, 255, 0.3);
+        transform: translateX(50px);
+    }
+
+    main {
+        width: 90%;
+    }
+
+    /* .......................hero................... */
+    .hero {
+        padding-top: 180px;
+    }
+
+
+    .iam {
+        font-size: 2rem;
+
+    }
+
+    .text-animation {
+        margin: 15px 0;
+        height: 80px;
+
+    }
+
+
+    .text {
+        font-size: 2rem;
+    }
+
+    .text-box {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .description {
+        font-size: 1.5rem;
+        margin: 0;
+    }
+
+    .profile-img {
+        width: 270px;
+        margin-left: 20px;
+        margin-bottom: 100px;
+    }
+
+    .section {
+        width: 100%;
+        height: fit-content;
+        padding-top: 150px;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 3rem;
+
+    }
+
+    .subtitle {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+        padding: 0 10px;
+    }
+
+    /* ................about............... */
+
+    .about-box {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .about-profile {
+        width: 60%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-img {
+        width: 300px;
+    }
+
+
+    .creative-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 10px;
+    }
+
+    .boxes {
+        width: min(15vw, 163px);
+        height: min(15vw, 163px);
+        aspect-ratio: 1;
+        border-radius: 15px;
+        font-size: 0.8rem;
+    }
+
+    h3 {
+        margin: 10px 5px;
+        font-size: 1.2rem;
+    }
+
+    .about-desc {
+        width: 40%;
+        height: fit-content;
+        padding: 10px;
+        font-size: 1.2rem;
+
+    }
+
+    .hire-me {
+        font-size: 1.2rem;
+        margin-top: 20px;
+    }
+
+    /* ........................skill box.................. */
+    .skill-box {
+        flex-direction: row;
+    }
+
+    .b-circle {
+        column-gap: 5px;
+    }
+
+    .b-text {
+        font-size: 0.8rem;
+        margin: 0 5px;
+    }
+
+    .fa-circle {
+        font-size: 0.8rem;
+    }
+
+    .b-percent {
+
+        padding: 3px;
+        font-size: 0.8rem;
+    }
+
+    h4 {
+        font-size: 2rem;
+        margin: 20px 0 20px 0;
+
+    }
+
+    /* ..............timeline.................... */
+    
+    /* .....................carousel............ */
+
+    .carousel-cell img {
+        /* height: 60vh; */
+        height: 36vw;
+        margin-left: 10px;
+        /* margin-right: 100px; */
+        overflow: hidden;
+    }
+
+    /* ..................contact................ */
+
+
+
+    .contact-box {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .contacts {
+        margin: 15px 0;
+    }
+
+    .contact-link {
+        margin: 0 0 10px 0;
+    }
+
+    .contact-icon {
+        font-size: 1.5rem;
+    }
+
+    .contact-info {
+        font-size: 1.5rem;
+    }
+
+    .contact-no a {
+        font-size: 1.2rem;
+
+    }
+
+    .form-info {
+        font-size: 1.2rem;
+    }
+
+    .contact-label {
+        font-size: 1.5rem;
+    }
+
+    .contact-inputs {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    /* ...................footer....................... */
+
+
+    .footer-section {
+        margin-top: 50px;
+        background: #562b7c;
+        border-radius: 10px 10px 0 0;
+        padding-bottom: 100px;
+
+    }
+
+    .footer-data {
+        padding: 10px 0 0 10px;
+    }
+
+    .footer-title {
+        font-size: 1.5rem;
+    }
+
+    .footer-subtitle {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .quick-link {
+        font-size: 1.5rem;
+        padding: 0px;
+        margin-right: 10px;
+    }
+
+    .footer-end {
+        text-align: center;
+    }
+
+    .fa-linkedin-in-n {
+        color: #0a66c2;
+    }
+
+    .fa-circle-xmark-n {
+        color: #ff5400;
+    }
+
+    .fa-behance-n {
+        color: #0054f7;
+    }
+
+    .fa-twitter-n {
+        color: #1da1f2;
+    }
+
+    .fa-instagram-n {
+        color: #c32aa3;
+    }
+
+    .quick-link:hover {
+        text-shadow: 2px 2px black;
+        transition: all 300ms ease-out;
+    }
+
+    .watermark {
+        width: 100%;
+        font-size: 0.8rem;
+        text-align: center;
+        color: var(--text-color);
+        text-decoration: none;
+        margin: 20px 0;
+    }
+
+    .watermark a {
+        color: var(--text-color);
+        text-decoration: none;
+    }
+
+    .watermark:hover a {
+
+        color: aqua;
+
+    }
+}
 
 /* for small Desktop */
-@media (min-width: 1025px) and (max-width: 1200px) {}
+@media (min-width: 1025px) and (max-width: 1200px) {
+
+     /* ....................namelogo................... */
+     .logo {
+
+        left: 5%;
+        border-radius: 0 0 35px 35px;
+        width: 170px;
+        height: 50px;
+        font-size: 0.5rem;
+
+    }
+
+    /* .......................navbar................ */
+    .nav-data {
+        width: fit-content;
+        top: 70px;
+        column-gap: 0px;
+        padding: 10px;
+    }
+
+    .nav-link {
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        border-radius: 50px;
+        margin: 0px;
+        width: fit-content;
+        height: fit-content;
+
+    }
+
+    .nav-link i {
+        padding-bottom: 5px;
+        font-size: 1rem;
+    }
+
+    /* ........................dark mode.................. */
+    .light {
+        right: 5%;
+        border-radius: 0 0 35px 35px;
+        font-size: 0.3rem;
+    }
+
+    .toggle {
+
+        width: 170px;
+        height: 50px;
+        transition: 0.2s;
+        justify-content: center;
+    }
+
+    .toggle i {
+        font-size: 20px;
+        padding: 0px;
+        margin-bottom: 1px;
+        width: 50px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .toggle .ball {
+        width: 25px;
+        height: 25px;
+        margin: 26px;
+        margin-top: 25px;
+        margin-left: -24px;
+    }
+
+    .dark .toggle .ball {
+        background: rgba(255, 255, 255, 0.3);
+        transform: translateX(50px);
+    }
+
+    main {
+        width: 90%;
+    }
+
+    /* .......................hero................... */
+    .hero {
+        padding-top: 180px;
+    }
+
+
+    .iam {
+        font-size: 3rem;
+
+    }
+
+    .text-animation {
+        margin: 15px 0;
+        height: 120px;
+
+    }
+
+
+    .text {
+        font-size: 3rem;
+    }
+
+    .text-box {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .description {
+        font-size: 2rem;
+        margin: 0;
+    }
+
+    .profile-img {
+        width: 300px;
+        margin-left: 40px;
+        margin-bottom: 100px;
+    }
+
+    .section {
+        width: 100%;
+        height: fit-content;
+        padding-top: 150px;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 3rem;
+
+    }
+
+    .subtitle {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+        padding: 0 10px;
+    }
+
+    /* ................about............... */
+
+    .about-box {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .about-profile {
+        width: 60%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-img {
+        width: 300px;
+    }
+
+
+    .creative-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 10px;
+    }
+
+    .boxes {
+        width: min(15vw, 163px);
+        height: min(15vw, 163px);
+        aspect-ratio: 1;
+        border-radius: 15px;
+        font-size: 1.2rem;
+    }
+
+    h3 {
+        margin: 10px 5px;
+        font-size: 1.2rem;
+    }
+
+    .about-desc {
+        width: 40%;
+        height: fit-content;
+        padding: 10px;
+        font-size: 1.3rem;
+
+    }
+
+    .hire-me {
+        font-size: 1.2rem;
+        margin-top: 20px;
+    }
+
+    /* ........................skill box.................. */
+    .skill-box {
+        flex-direction: row;
+    }
+
+    .b-circle {
+        column-gap: 5px;
+    }
+
+    .b-text {
+        font-size: 1.2rem;
+        margin: 0 10px;
+    }
+
+    .fa-circle {
+        font-size: 1.2rem;
+    }
+
+    .b-percent {
+
+        padding: 5px;
+        font-size: 1rem;
+    }
+
+    h4 {
+        font-size: 2rem;
+        margin: 20px 0 20px 0;
+
+    }
+
+    /* ..............timeline.................... */
+    
+    /* .....................carousel............ */
+
+    .carousel-cell img {
+        /* height: 60vh; */
+        height: 36vw;
+        margin-left: 10px;
+        /* margin-right: 100px; */
+        overflow: hidden;
+    }
+
+    /* ..................contact................ */
+
+
+
+    .contact-box {
+        /* flex-direction: column; */
+        align-items: center;
+
+    }
+
+    .contacts {
+        margin: 15px 0;
+    }
+
+    .contact-link {
+        margin: auto 30px;
+        padding-bottom: 50px;
+    }
+
+    .contact-icon {
+        font-size: 1.5rem;
+    }
+
+    .contact-info {
+        font-size: 1.5rem;
+    }
+
+    .contact-no a {
+        font-size: 1.2rem;
+
+    }
+
+    .form-info {
+        font-size: 1.2rem;
+    }
+
+    .contact-label {
+        font-size: 1.5rem;
+    }
+
+    .contact-inputs {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    /* ...................footer....................... */
+
+
+    .footer-section {
+        margin-top: 50px;
+        background: #562b7c;
+        border-radius: 10px 10px 0 0;
+        padding-bottom: 100px;
+
+    }
+
+    .footer-data {
+        padding: 10px 0 0 10px;
+    }
+
+    .footer-title {
+        font-size: 1.5rem;
+    }
+
+    .footer-subtitle {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .quick-link {
+        font-size: 1.5rem;
+        padding: 0px;
+        margin-right: 10px;
+    }
+
+    .footer-end {
+        text-align: center;
+    }
+
+    .fa-linkedin-in-n {
+        color: #0a66c2;
+    }
+
+    .fa-circle-xmark-n {
+        color: #ff5400;
+    }
+
+    .fa-behance-n {
+        color: #0054f7;
+    }
+
+    .fa-twitter-n {
+        color: #1da1f2;
+    }
+
+    .fa-instagram-n {
+        color: #c32aa3;
+    }
+
+    .quick-link:hover {
+        text-shadow: 2px 2px black;
+        transition: all 300ms ease-out;
+    }
+
+    .watermark {
+        width: 100%;
+        font-size: 0.8rem;
+        text-align: center;
+        color: var(--text-color);
+        text-decoration: none;
+        margin: 20px 0;
+    }
+
+    .watermark a {
+        color: var(--text-color);
+        text-decoration: none;
+    }
+
+    .watermark:hover a {
+
+        color: aqua;
+
+    }
+}
 
 /* mediaum desktop */
-@media (min-width: 1200px) and (max-width: 1600px) {}
+@media (min-width: 1201px) and (max-width: 1600px) {
+
+    /* ....................namelogo................... */
+    .logo {
+
+        left: 10%;
+        border-radius: 0 0 35px 35px;
+        width: 200px;
+        height: 50px;
+        font-size: 0.6rem;
+
+    }
+
+    /* .......................navbar................ */
+    .nav-data {
+        width: fit-content;
+        top: 70px;
+        column-gap: 10px;
+        padding: 10px;
+    }
+
+    .nav-link {
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        border-radius: 50px;
+        margin: 0;
+        width: fit-content;
+        height: fit-content;
+
+    }
+
+    .nav-link i {
+        padding-bottom: 5px;
+        font-size: 1rem;
+    }
+
+    /* ........................dark mode.................. */
+    .light {
+
+        right: 10%;
+        border-radius: 0 0 35px 35px;
+        font-size: 0.3rem;
+    }
+
+    .toggle {
+
+        width: 200px;
+        height: 50px;
+        transition: 0.2s;
+        justify-content: center;
+    }
+
+    .toggle i {
+        font-size: 20px;
+        padding: 0px;
+        margin-bottom: 1px;
+        width: 50px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .toggle .ball {
+        width: 25px;
+        height: 25px;
+        margin: 26px;
+        margin-top: 25px;
+        margin-left: -24px;
+    }
+
+    .dark .toggle .ball {
+        background: rgba(255, 255, 255, 0.3);
+        transform: translateX(50px);
+    }
+
+    main {
+        width: 90%;
+    }
+
+    /* .......................hero................... */
+    .hero {
+        padding-top: 180px;
+    }
+
+
+    .iam {
+        font-size: 3.5rem;
+    }
+
+    .text-animation {
+        margin: 15px 0;
+        height: 150px;
+
+    }
+
+
+    .text {
+        font-size: 3rem;
+    }
+
+    .text-box {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .description {
+        font-size: 2.5rem;
+        margin: 0;
+    }
+
+    .profile-img {
+        width: 350px;
+        margin-left: 40px;
+        margin-bottom: 100px;
+    }
+
+    .section {
+        width: 100%;
+        height: fit-content;
+        padding-top: 150px;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 3rem;
+
+    }
+
+    .subtitle {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+        padding: 0 10px;
+    }
+
+    /* ................about............... */
+
+    .about-box {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .about-profile {
+        width: 60%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-img {
+        width: 300px;
+    }
+
+
+    .creative-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 10px;
+    }
+
+    .boxes {
+        width: min(15vw, 163px);
+        height: min(15vw, 163px);
+        aspect-ratio: 1;
+        border-radius: 15px;
+        font-size: 1.2rem;
+    }
+
+    h3 {
+        margin: 10px 5px;
+        font-size: 1.2rem;
+    }
+
+    .about-desc {
+        width: 40%;
+        height: fit-content;
+        padding: 10px;
+        font-size: 1.5rem;
+
+    }
+
+    .hire-me {
+        font-size: 1.2rem;
+        margin-top: 20px;
+    }
+
+    /* ........................skill box.................. */
+    .skill-box {
+        flex-direction: row;
+    }
+
+    .b-circle {
+        column-gap: 5px;
+    }
+
+    .b-text {
+        font-size: 1.2rem;
+        margin: 0 10px;
+    }
+
+    .fa-circle {
+        font-size: 1.2rem;
+    }
+
+    .b-percent {
+
+        padding: 5px;
+        font-size: 1rem;
+    }
+
+    h4 {
+        font-size: 2rem;
+        margin: 20px 0 20px 0;
+
+    }
+
+    /* ..............timeline.................... */
+    
+    /* .....................carousel............ */
+
+    .carousel-cell img {
+        /* height: 60vh; */
+        height: 36vw;
+        margin-left: 10px;
+        /* margin-right: 100px; */
+        overflow: hidden;
+    }
+
+    /* ..................contact................ */
+
+
+
+    .contact-box {
+        /* flex-direction: column; */
+        align-items: center;
+
+    }
+
+    .contacts {
+        margin: 15px 0;
+    }
+
+    .contact-link {
+        margin: auto 30px;
+        padding-bottom: 50px;
+    }
+
+    .contact-icon {
+        font-size: 1.5rem;
+    }
+
+    .contact-info {
+        font-size: 1.5rem;
+    }
+
+    .contact-no a {
+        font-size: 1.2rem;
+
+    }
+
+    .form-info {
+        font-size: 1.2rem;
+    }
+
+    .contact-label {
+        font-size: 1.5rem;
+    }
+
+    .contact-inputs {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    /* ...................footer....................... */
+
+
+    .footer-section {
+        margin-top: 50px;
+        background: #562b7c;
+        border-radius: 10px 10px 0 0;
+        padding-bottom: 100px;
+
+    }
+
+    .footer-data {
+        padding: 10px 0 0 10px;
+    }
+
+    .footer-title {
+        font-size: 1.5rem;
+    }
+
+    .footer-subtitle {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .quick-link {
+        font-size: 1.5rem;
+        padding: 0px;
+        margin-right: 10px;
+    }
+
+    .footer-end {
+        text-align: center;
+    }
+
+    .fa-linkedin-in-n {
+        color: #0a66c2;
+    }
+
+    .fa-circle-xmark-n {
+        color: #ff5400;
+    }
+
+    .fa-behance-n {
+        color: #0054f7;
+    }
+
+    .fa-twitter-n {
+        color: #1da1f2;
+    }
+
+    .fa-instagram-n {
+        color: #c32aa3;
+    }
+
+    .quick-link:hover {
+        text-shadow: 2px 2px black;
+        transition: all 300ms ease-out;
+    }
+
+    .watermark {
+        width: 100%;
+        font-size: 0.8rem;
+        text-align: center;
+        color: var(--text-color);
+        text-decoration: none;
+        margin: 20px 0;
+    }
+
+    .watermark a {
+        color: var(--text-color);
+        text-decoration: none;
+    }
+
+    .watermark:hover a {
+
+        color: aqua;
+
+    }
+}
