@@ -819,13 +819,13 @@ input {
 }
 
 .watermark a {
-    color: var(--text-color);
+    color: aqua;
     text-decoration: none;
 }
 
 .watermark:hover a {
 
-    color: aqua;
+    color: var(--text-color);
 
 }
 
@@ -1186,16 +1186,6 @@ input {
         margin: 20px 0;
     }
 
-    .watermark a {
-        color: var(--text-color);
-        text-decoration: none;
-    }
-
-    .watermark:hover a {
-
-        color: aqua;
-
-    }
 
 
 }
@@ -1552,16 +1542,7 @@ input {
         margin: 20px 0;
     }
 
-    .watermark a {
-        color: var(--text-color);
-        text-decoration: none;
-    }
-
-    .watermark:hover a {
-
-        color: aqua;
-
-    }
+   
 }
 
 /* For Large Devices */
@@ -1916,16 +1897,6 @@ input {
         margin: 20px 0;
     }
 
-    .watermark a {
-        color: var(--text-color);
-        text-decoration: none;
-    }
-
-    .watermark:hover a {
-
-        color: aqua;
-
-    }
 
 }
 
@@ -2281,16 +2252,6 @@ input {
         margin: 20px 0;
     }
 
-    .watermark a {
-        color: var(--text-color);
-        text-decoration: none;
-    }
-
-    .watermark:hover a {
-
-        color: aqua;
-
-    }
 
 }
 
@@ -2651,19 +2612,6 @@ input {
         margin: 20px 0;
     }
 
-    .watermark a {
-        color: var(--text-color);
-        text-decoration: none;
-    }
-
-    .watermark:hover a {
-
-        color: aqua;
-
-    }
-
-
-
 }
 
 /* for Large Tablet */
@@ -3020,16 +2968,6 @@ input {
         margin: 20px 0;
     }
 
-    .watermark a {
-        color: var(--text-color);
-        text-decoration: none;
-    }
-
-    .watermark:hover a {
-
-        color: aqua;
-
-    }
 }
 
 /* for small Desktop */
@@ -3385,20 +3323,10 @@ input {
         margin: 20px 0;
     }
 
-    .watermark a {
-        color: var(--text-color);
-        text-decoration: none;
-    }
-
-    .watermark:hover a {
-
-        color: aqua;
-
-    }
 }
 
 /* mediaum desktop */
-@media (min-width: 1201px) and (max-width: 1600px) {
+@media (min-width: 1201px) and (max-width: 1700px) {
 
     /* ....................namelogo................... */
     .logo {
@@ -3750,14 +3678,4 @@ input {
         margin: 20px 0;
     }
 
-    .watermark a {
-        color: var(--text-color);
-        text-decoration: none;
-    }
-
-    .watermark:hover a {
-
-        color: aqua;
-
-    }
 }
