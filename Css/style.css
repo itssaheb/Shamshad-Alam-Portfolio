@@ -213,7 +213,7 @@ main {
 .description {
     text-align: justify;
     color: var(--text2-color);
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin: 30px 0 0 0;
     text-shadow: 2px 2px 2px black;
 
@@ -253,11 +253,12 @@ main {
 }
 
 .about-profile {
-    width: 50%;
+    width: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-right: 50px;
 }
 
 .about-img {
@@ -308,7 +309,7 @@ main {
 }
 
 .about-desc {
-    width: 50%;
+    width: fit-content;
     color: var(--text2-color);
     font-size: 2rem;
     text-align: justify;
@@ -2789,12 +2790,13 @@ input {
     }
 
     .about-profile {
-        width: 60%;
+        width: fit-content;
         height: fit-content;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-right: 20px;
     }
 
     .about-img {
@@ -2823,7 +2825,7 @@ input {
     }
 
     .about-desc {
-        width: 40%;
+        width: fit-content;
         height: fit-content;
         padding: 10px;
         font-size: 1.2rem;
@@ -3094,7 +3096,7 @@ input {
 
 
     .text {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .text-box {
@@ -3103,7 +3105,7 @@ input {
     }
 
     .description {
-        font-size: 2rem;
+        font-size: 1.5rem;
         margin: 0;
     }
 
@@ -3143,12 +3145,13 @@ input {
     }
 
     .about-profile {
-        width: 60%;
+        width: fit-content;
         height: fit-content;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-right: 50px;
     }
 
     .about-img {
@@ -3177,10 +3180,10 @@ input {
     }
 
     .about-desc {
-        width: 40%;
+        width: fit-content;
         height: fit-content;
         padding: 10px;
-        font-size: 1.3rem;
+        font-size: 1.5rem;
 
     }
 
@@ -3458,7 +3461,7 @@ input {
     }
 
     .description {
-        font-size: 2.5rem;
+        font-size: 2rem;
         margin: 0;
     }
 
@@ -3498,12 +3501,13 @@ input {
     }
 
     .about-profile {
-        width: 60%;
+        width: fit-content;
         height: fit-content;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-right: 50px;
     }
 
     .about-img {
@@ -3532,10 +3536,10 @@ input {
     }
 
     .about-desc {
-        width: 40%;
+        width: fit-content;
         height: fit-content;
         padding: 10px;
-        font-size: 1.5rem;
+        font-size: 2rem;
 
     }
 
