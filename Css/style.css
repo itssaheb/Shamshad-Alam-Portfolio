@@ -550,15 +550,15 @@ h4 {
     left: -3.5px
 }
 
-.main-timeline2 .timeline:nth-child(2n) .icon {
-    left: auto;
-    right: 0;
-    box-shadow: 0 0 0 2px #4bd9bf;
+.main-timeline2 .timeline:nth-child(1n) .icon {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.main-timeline2 .timeline:nth-child(1n) .icon {
+.main-timeline2 .timeline:nth-child(2n) .icon {
+    left: auto;
+    right: 0;
+    box-shadow: 0 0 0 2px #4bd9bf;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -671,7 +671,6 @@ h4 {
  .carousel-cell img {
     height: 60vh;
     margin: 10px;
-    overflow: hidden;
 } 
 
 
@@ -1087,7 +1086,6 @@ input {
         height: 55vh;
         margin-left: 100px;
         margin-right: 100px;
-        overflow: hidden;
     }
 
     /* ..................contact................ */
@@ -1446,7 +1444,6 @@ input {
         height: 60vh;
         margin-left: 100px;
         margin-right: 100px;
-        overflow: hidden;
     }
 
     /* ..................contact................ */
@@ -1804,7 +1801,6 @@ input {
         height: 60vh;
         margin-left: 100px;
         margin-right: 100px;
-        overflow: hidden;
     }
 
     /* ..................contact................ */
@@ -2162,7 +2158,6 @@ input {
         height: 60vh;
         margin-left: 100px;
         margin-right: 100px;
-        overflow: hidden;
     }
 
     /* ..................contact................ */
@@ -2521,7 +2516,6 @@ input {
         height: 60vh;
         margin-left: 100px;
         margin-right: 100px;
-        overflow: hidden;
     }
 
     /* ..................contact................ */
@@ -2879,8 +2873,6 @@ input {
         /* height: 60vh; */
         height: 36vw;
         margin-left: 10px;
-        /* margin-right: 100px; */
-        overflow: hidden;
     }
 
     /* ..................contact................ */
@@ -3234,7 +3226,6 @@ input {
     .carousel-cell img {
         height: 36vw;
         margin-left: 10px;
-        overflow: hidden;
     }
 
     /* ..................contact................ */
@@ -3589,7 +3580,6 @@ input {
     .carousel-cell img {
         height: 36vw;
         margin-left: 10px;
-        overflow: hidden;
     }
 
     /* ..................contact................ */
