@@ -1,3 +1,5 @@
+// Dark Mode
+
 const body = document.querySelector("body");
 const toggle = document.querySelector("#toggle");
 const sunIcon = document.querySelector(".toggle .fa-solid fa-sun");
@@ -11,6 +13,7 @@ toggle.addEventListener("change", () => {
     moonIcon.className == "fa-solid fa-moon" ? "fa-solid fa-moon" : "fa-solid fa-moon";
 });
 
+// link reflection 
 
 var list1 = document.getElementById("li-1");
 var list2 = document.getElementById("li-2");
@@ -67,6 +70,8 @@ list6.onclick = function () {
   list5.classList.remove("active");
   list1.classList.remove("active");
 };
+
+// text typing
 
 var typing = new Typed(".text", {
   strings: ["I am a Graphic Designer.", "I create Poster.", "I create Poster.", "I create Catalogue.", "I create Brochure.", "I create Emailer.", "I create Flyer etc..."],

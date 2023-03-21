@@ -492,6 +492,7 @@ h4 {
     position: absolute;
     top: -30px;
     left: 0
+    
 }
 
 .main-timeline2 .timeline-content {
@@ -552,7 +553,15 @@ h4 {
 .main-timeline2 .timeline:nth-child(2n) .icon {
     left: auto;
     right: 0;
-    box-shadow: 0 0 0 2px #4bd9bf
+    box-shadow: 0 0 0 2px #4bd9bf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-timeline2 .timeline:nth-child(1n) .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .main-timeline2 .timeline:nth-child(2) {
@@ -587,6 +596,9 @@ h4 {
 }
 
 .main-timeline2 .timeline:nth-child(3n) .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     box-shadow: 0 0 0 2px #ff9e09
 }
 
